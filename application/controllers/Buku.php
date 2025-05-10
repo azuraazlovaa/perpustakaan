@@ -28,8 +28,7 @@ class Buku extends CI_Controller
     $this->form_validation->set_rules('judul', 'Judul', 'required', [ 'required' => 'Judul Wajib di isi' ]);
     $this->form_validation->set_rules('pengarang', 'Pengarang', 'required', [ 'required' => 'Pengarang Wajib di isi' ]);
     $this->form_validation->set_rules('kategori', 'Kategori', 'required', [ 'required' => 'Kategori Wajib di isi' ]);
-    $this->form_validation->set_rules('penerbit', 'Penerbit', 'required', [ 'required' => 'Penerbit Wajib di isi' 
-  ]);
+    $this->form_validation->set_rules('penerbit', 'Penerbit', 'required', [ 'required' => 'Penerbit Wajib di isi' ]);
 
     if ($this->form_validation->run() == false) {
       // echo "Form validation failed";
